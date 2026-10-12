@@ -6,14 +6,13 @@ We keep a working index for product and engineering, and reactjs-interview-quest
 
 ## Images
 
-[![reactjs-interview-questions](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![reactjs-interview-questions](images/preview.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
 ## Core React
 
 1.  ### What is React?
 
     React (aka React.js or ReactJS) is an **open-source front-end JavaScript library** for building user interfaces based on components. It's used for handling the view layer in web and mobile applications, and allows developers to create reusable UI components and manage the state of those components efficiently.
-
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -259,7 +258,6 @@ We keep a working index for product and engineering, and reactjs-interview-quest
 
     The usage of Error boundaries from the above library is quite straight forward.
 
-
     ```jsx
     "use client";
 
@@ -329,7 +327,7 @@ We keep a working index for product and engineering, and reactjs-interview-quest
 
     _State_ of a component is an object that holds some information that may change over the lifetime of the component. The important point is whenever the state object changes, the component re-renders. It is always recommended to make our state as simple as possible and minimize the number of stateful components.
 
-    [![state](images/state.jpg)](https://www.swifttechco.com)
+    [![state](images/state.jpg)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
     Let's take an example of **User** component with `message` state. Here, **useState** hook has been used to add state to the User component and it returns an array with current state and function to update it.
 
@@ -657,17 +655,17 @@ class ParentComponent extends React.Component {
     **2. State or Props Change**  
         When the component's state or props change, React creates a new Virtual DOM reflecting the updated UI. However, it doesn't immediately update the Real DOM; instead, it works in memory to prepare for an efficient update.
                
-      [![vdom](images/vdom1.png)](https://www.swifttechco.com)
+      [![vdom](images/vdom1.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
     **3. Diffing Algorithm**  
         React then compares the new Virtual DOM with the previous one using a process called diffing. It determines what has changed between the two versions and identifies the minimal set of updates needed.
        
-       [![vdom2](images/vdom2.png)](https://www.swifttechco.com)  
+       [![vdom2](images/vdom2.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)  
 
     **4. Reconciliation**  
         Based on the diffing results, React decides which parts of the Real DOM should be updated. It avoids re-rendering the entire DOM and instead updates only the elements that actually changed.
         
-       [![vdom3](images/vdom3.png)](https://www.swifttechco.com)
+       [![vdom3](images/vdom3.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
     **5. Efficient DOM Updates**  
         This entire processworking with the Virtual DOM, diffing, and selective updatingmakes the UI rendering much faster and more efficient than manipulating the Real DOM directly.
@@ -2663,13 +2661,13 @@ class ParentComponent extends React.Component {
     const Link = ({ page, children }) => <a href={page}>{children}</a>;
 
     const testRenderer = TestRenderer.create(
-      <Link page={"https://www.swifttechco.com"}>{"Facebook"}</Link>
+      <Link page={"https://github.com/Swift-Tech-Co/reactjs-interview-questions"}>{"Facebook"}</Link>
     );
 
     console.log(testRenderer.toJSON());
     // {
     //   type: 'a',
-    //   props: { href: 'https://www.swifttechco.com' },
+    //   props: { href: 'https://github.com/Swift-Tech-Co/reactjs-interview-questions' },
     //   children: [ 'Facebook' ]
     // }
     ```
@@ -2765,10 +2763,9 @@ class ParentComponent extends React.Component {
              *   Subscribe to stores and **re-render** when the data changes.
              *   They can also trigger new actions (e.g., on user input).
 
-
        The workflow between dispatcher, stores and views components with distinct inputs and outputs as follows:
 
-       [![flux](images/flux.png)](https://www.swifttechco.com)
+       [![flux](images/flux.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -2818,7 +2815,6 @@ class ParentComponent extends React.Component {
         Redux is more minimal by design and provides extension points such as middleware and store enhancers. This has led to a large ecosystem, but it also means you must thoughtfully choose and configure additional packages for features like undo/redo, persistence, or form handlingsomething Flux explicitly leaves out but may be simpler to manage in smaller setups.
      3.  **Limited static type integration**  
         While Flux has mature support for static type checking with tools like Flow, Redux’s type integration is less seamless. Although TypeScript is commonly used with Redux now, early Flow support was limited, and more boilerplate was required for static type safety. This may affect teams that rely heavily on type systems for large codebases.
-
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -3353,7 +3349,7 @@ class ParentComponent extends React.Component {
      Follow the below steps to debug React Native app:
 
      1. Run your application in the iOS simulator.
-     2. Press `Command + D` and a webpage should open up at `https://www.swifttechco.com
+     2. Press `Command + D` and a webpage should open up at `https://github.com/Swift-Tech-Co/reactjs-interview-questions
      3. Enable _Pause On Caught Exceptions_ for a better debugging experience.
      4. Press `Command + Option + I` to open the Chrome Developer tools, or open it via `View` -> `Developer` -> `Developer Tools`.
      5. You should now be able to debug as you normally would.
@@ -3931,7 +3927,7 @@ class ParentComponent extends React.Component {
 
      function UserProfile() {
       // Correct: Using a custom hook here
-      const user = useFetchData('https://www.swifttechco.com');
+      const user = useFetchData('https://github.com/Swift-Tech-Co/reactjs-interview-questions');
 
       return (
         <div>
@@ -4120,7 +4116,7 @@ class ParentComponent extends React.Component {
 
      For example, BuggyCounter component displays the component stack trace as below,
 
-     [![stacktrace](images/error_boundary.png)](https://www.swifttechco.com)
+     [![stacktrace](images/error_boundary.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4842,7 +4838,7 @@ class ParentComponent extends React.Component {
 
 211. ### What is your favorite React stack?
      Even though the tech stack varies from developer to developer, the most popular stack is used in react boilerplate project code. It mainly uses Redux and redux-saga for state management and asynchronous side-effects, react-router for routing purpose, styled-components for styling react components, axios for invoking REST api, and other supported stack such as webpack, reselect, ESNext, Babel.
-     You can clone the project https://www.swifttechco.com and start working on any new react project.
+     You can clone the project https://github.com/Swift-Tech-Co/reactjs-interview-questions and start working on any new react project.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4932,7 +4928,7 @@ class ParentComponent extends React.Component {
        const [data, setData] = React.useState({ hits: [] });
 
        React.useEffect(() => {
-         fetch("https://www.swifttechco.com")
+         fetch("https://github.com/Swift-Tech-Co/reactjs-interview-questions")
            .then((response) => response.json())
            .then((data) => setData(data));
        }, []);
@@ -5736,7 +5732,7 @@ class ParentComponent extends React.Component {
         console.log("Application Rendered");
 
         const handleAsyncFetch = () => {
-          fetch("https://www.swifttechco.com").then(() => {
+          fetch("https://github.com/Swift-Tech-Co/reactjs-interview-questions").then(() => {
             // Automatic Batching re-render only once
             setCount(count + 1);
             setMessage("users fetched");
@@ -6105,7 +6101,6 @@ Technically it is possible to write nested function components but it is not sug
         *   Non-urgent tasks (like data fetching) can be delayed or paused.
         *   This improves responsiveness and allows for **time slicing** in Concurrent Mode.
 
-
 **[⬆ Back to Top](#table-of-contents)**
 
 266. ### How is `useReducer` Different from `useState`?
@@ -6201,7 +6196,6 @@ Technically it is possible to write nested function components but it is not sug
         2. If you need to access backend resources directly.
         3. When you need to keep sensitive information((access tokens, API keys, etc)	) on the server.
         4. If you want reduce client-side JavaScript and placing large dependencies on the server.
-
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -7440,7 +7434,7 @@ Technically it is possible to write nested function components but it is not sug
       **Example: AuthorList component**
       ```jsx
       function AuthorList() {
-        const { data, loading, error } = useFetchData('https://www.swifttechco.com');
+        const { data, loading, error } = useFetchData('https://github.com/Swift-Tech-Co/reactjs-interview-questions');
 
         if (loading) return <p>Loading authors...</p>;
         if (error) return <p>Error: {error}</p>;
@@ -10157,11 +10151,11 @@ Technically it is possible to write nested function components but it is not sug
 
     React 16.3+ Phases (or an interactive version)
 
-    [![phases 16.4+](images/phases16.4.png)](https://www.swifttechco.com)
+    [![phases 16.4+](images/phases16.4.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
     Before React 16.3
 
-    [![phases 16.2](images/phases.png)](https://www.swifttechco.com)
+    [![phases 16.2](images/phases.png)](https://github.com/Swift-Tech-Co/reactjs-interview-questions)
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -10955,7 +10949,7 @@ Technically it is possible to write nested function components but it is not sug
         Use the polyfill.io CDN to retrieve custom, browser-specific polyfills by adding this line to `index.html`:
 
         ```html
-        <script src="https://www.swifttechco.com"></script>
+        <script src="https://github.com/Swift-Tech-Co/reactjs-interview-questions"></script>
         ```
 
         In the above script we had to explicitly request the `Array.prototype.includes` feature as it is not included in the default feature set.
@@ -11059,7 +11053,7 @@ Technically it is possible to write nested function components but it is not sug
       }
 
       componentDidMount() {
-        fetch("https://www.swifttechco.com")
+        fetch("https://github.com/Swift-Tech-Co/reactjs-interview-questions")
           .then((res) => res.json())
           .then(
             (result) => {
@@ -12290,13 +12284,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/reactjs-interview-questions
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
