@@ -12314,3 +12314,11 @@ Compiled and maintained from upstream [sudheerj/reactjs-interview-questions](htt
 ---
 
 Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+
+## Sources
+
+Compiled and maintained from upstream [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
